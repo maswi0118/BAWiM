@@ -35,16 +35,14 @@ port=3306
 _To avoid any issues, we suggest you to reset your database and clean all cookies after each of the exercises_
 ## 1. UPEL quiz
 Go to the UPEL website and take the short quiz.
-## 2. Weak Session IDs (Brute force)
-In this exercise we're gonna consider some bad practices regarding cookies generation, using DVWA. In the __DVWA Security__ tab, you can change the security level of your cookies generator. Then, in the __Weak Session IDs__ tab, you can generate new cookies. Your task is to figure out how the cookies are created on the following levels: low, medium, high. In case you need some help- go to the _Viev source_- it's written explicitely in the code. As a report, hand a screenshot of a few cracked cookies hashes on the high level. For cracking, you can use the following site: https://crackstation.net/ (it's possible to crack several hashes at once).  
-Now it's clear, that such ways of cookies generation are easy to guess and vulnerable to brute force attacks.
+## 2. Weak Session IDs
+In this exercise we're gonna consider some bad practices regarding cookies generation, using DVWA. In the __DVWA Security__ tab, you can change the security level of your cookies generator. Then, in the __Weak Session IDs__ tab, you can generate new cookies. Your task is to make out how the cookies are created on the following levels: low, medium, high. In case you need some help- go to the _Viev source_- it's written explicitely in the code. As a report, hand a screenshot of a few cracked cookies hashes on the high level. For cracking, you can use the following site: https://crackstation.net/ (it's possible to crack several hashes at once).  
+Now it's clear, that such ways od cookies generation are easy to guess and vulnerable to brute force attacks.
 ## 3. Cross site scripting (stored)
-At first, change the security to low. Now, try to inject a piece of javascript code, that would send the visitor cookies at the given address. If you want to, you can use burp suite or some python script (like http.server <port number>), however it's much easier and less complicated to use some external site, e.g. https://webhook.site/. As a report, pass a snapshot of captured cookies.  
-Hint: The default '_Message_' field length is set to _50_- most likely it won't be enough, so just change it in the source code for, let's say, _300_
-## 4.
-## 5. Last but not least- Session hijacking (Optional)
-No matter what the way of seizing somebody's cookies was- now we can make an advatage of it. While logged in on one browser tab, open another one and try to sign in with no credentials given. You can use a cookie manager, like: https://addons.mozilla.org/pl/firefox/addon/cookie-editor/ (for Firefox). The last step is to modify the cookies. Then you need to change your url address source path (remove _/login.php_), so it would look the following way: _<your_ip_address>/<your_dvwa_folder_name>/_. That's it- you should be logged in into hacked user account.  
-There is no way to verify the way you've signed in and, hence, there is no need to report that task.
+At first, change the security level- the higher you choose, the better the protection is. Now, try to inject a piece of javascript code, that would send the visitor cookies at the given address. If you want to, you can use burp suite or some python script (like http.server <port number>), however it's much easier and less complicated to use some external site, e.g. https://webhook.site/. As a report, pass a snapshot of captured cookies. If you want to, you can try to solve the problem on several security levels.  
+Hint: The default '_Message/Name_' field length is too small- most likely it won't be enough, so just change it in the source code for, let's say, _300_
+## 4. Last but not least- Session hijacking
+No matter what the way of capturing somebody's cookies was- now we can make an advatage of it. While logged in on one browser tab, open another one and try to sign in with no credentials given. You can use a cookie manager, like: https://addons.mozilla.org/pl/firefox/addon/cookie-editor/ (for Firefox). The last step is to modify the cookies. Then you need to change your url address source path (remove _/login.php_), so it would look the following way: _<your_ip_address>/<your_dvwa_folder_name>/_. That's it- you should be logged in into hacked user account. As a report, just send a screenshot of a page with admin account signed in.
 
 
 # Sources
