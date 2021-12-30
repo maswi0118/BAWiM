@@ -39,7 +39,7 @@ Go to the UPEL website and take the short quiz.
 In this exercise we're gonna consider some bad practices regarding cookies generation, using DVWA. In the __DVWA Security__ tab, you can change the security level of your cookies generator. Then, in the __Weak Session IDs__ tab, you can generate new cookies. Your task is to make out how the cookies are created on the following levels: low, medium, high. In case you need some help- go to the _Viev source_- it's written explicitely in the code. As a report, hand a screenshot of a few cracked cookies hashes on the high level. For cracking, you can use the following site: https://crackstation.net/ (it's possible to crack several hashes at once).  
 Now it's clear, that such ways od cookies generation are easy to guess and vulnerable to brute force attacks.
 ## 3. Cross site scripting (stored)
-At first, change the security to low. Now, try to inject a piece of javascript code, that would send the visitor cookies at the given address. If you want to, you can use burp suite or some python script (like http.server <port number>), however it's much easier and less complicated to use some external site, e.g. https://webhook.site/. As a report, pass a snapshot of captured cookies.  
+At first, change the security to low. Now, try to inject a piece of javascript code, that would send the visitor cookies at the given address. If you want to, you can use burp suite or some python script (like http.server _<port number>_), however it's much easier and less complicated to use some external site, e.g. https://webhook.site/. As a report, pass a snapshot of captured cookies.  
 Hint: The default '_Message_' field length is set to _50_- most likely it won't be enough, so just change it in the source code for, let's say, _300_
 ## 4.
 ## 5. Last but not least- Session hijacking (Optional)
@@ -51,4 +51,5 @@ There is no way to verify the way you've signed in and, hence, there is no need 
 https://youtu.be/cak2lQvBRAo  
 https://youtu.be/LKE1G4sinBM  
 https://youtu.be/xzKEXAdlxPU  
-https://youtu.be/UXtxfka2TuY
+https://youtu.be/UXtxfka2TuY  
+https://youtu.be/nJrH7HaiMPI
