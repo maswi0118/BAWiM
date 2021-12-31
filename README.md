@@ -30,6 +30,7 @@ port=3306
 * run Apache and Mysql servers again and repeat previous steps, now you should be able to setup your database and start exercises.
 
 ## On Linux
+_TODO, some mysql database isuues to solve remaining_
 
 # Exercises
 _To avoid any issues, we suggest you to reset your database and clean all cookies after each of the exercises_
