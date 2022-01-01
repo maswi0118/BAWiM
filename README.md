@@ -40,6 +40,7 @@ port=3306
 * `cd /var/www/html`
 * `sudo git clone https://github.com/ethicalhack3r/DVWA`
 * `sudo chmod -R 777 DVWA`
+* `sudo mv DVWA dvwa`
 * Now you need to edit the configuration file, e.g. `sudo nano DVWA/config/config.inc.php.dist`, replace the password value with blank: `$_DVWA['db_password']='';` and username with _root_: `$_DVWA['db_user']='root';`. Save the file as __config.inc.php__
 * `sudo service mysql start`
 * `sudo mysql -u root -p` and leave the password field blank
