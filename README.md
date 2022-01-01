@@ -52,7 +52,7 @@ port=3306
 * `sudo service apache2 start`
 * run the web browser- we highly recommend __Firefox__ and go to `http://127.0.0.1/dvwa/setup.php`
 * at the bottom of the page, __Setup / Reset DB__ tab on the left, try to __Create / Reset Database__
-* you should be redirected to `http://127.0.0.1/dvwa/login.php`. Sign in, default credentials should be `admin:password`
+* you should be redirected to `http://127.0.0.1/dvwa/login.php`. Sign in, default credentials are `admin:password`
 * now you should be able to start the exercises
 
 
