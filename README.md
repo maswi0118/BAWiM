@@ -77,6 +77,7 @@ https://youtu.be/LKE1G4sinBM
 https://youtu.be/xzKEXAdlxPU  
 https://youtu.be/UXtxfka2TuY  
 https://youtu.be/nJrH7HaiMPI
+  
 https://www.omegasoft.pl/blog/przechwytywanie-sesji-session-hijacking/
 https://support.google.com/analytics/answer/2731565?hl=en#zippy=%2Cin-this-article
 https://www.paladion.net/blogs/transmitting-session-ids
