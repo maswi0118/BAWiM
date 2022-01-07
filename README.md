@@ -1,5 +1,5 @@
 # BAWiM- DVWA
-BAWiM course project created by Szymon Bobrowski& Mateusz Świder.
+BAWiM course project created by Szymon Bobrowski & Mateusz Świder.
 # About
 During this classes we're gonna focus on the safety of our session, in particular, how to secure our cookies from various attacks. We will also try to improve our practical skills, utilizing the __'Damn Vulnerable Web Application' (DVWA)__. Should you have any problem, don't hesitate to ask or just go to sources- most likely you can find a solution there.
 # Step by step installation
